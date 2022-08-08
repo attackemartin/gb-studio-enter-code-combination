@@ -137,70 +137,6 @@
                                 "command": "EVENT_SET_INPUT_SCRIPT",
                                 "args": {
                                     "input": [
-                                        "b"
-                                    ],
-                                    "override": false,
-                                    "__scriptTabs": "press",
-                                    "__label": "reset with B",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "reset"
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "1",
-                                                            "value": {
-                                                                "type": "number",
-                                                                "value": 0
-                                                            },
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "ec6eebc9-5c4d-4678-bf73-95df98d8be60"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "0",
-                                                            "value": {
-                                                                "type": "number",
-                                                                "value": 0
-                                                            },
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "00ec9628-8911-4086-a253-d54040196ce1"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                        "args": {
-                                                            "customEventId": "307696a0-891c-405c-b4e1-03957ba20130",
-                                                            "$actor[0]$": "22311ff4-ff62-45a1-9b82-a945d6bd8e93",
-                                                            "$actor[1]$": "f4e04e03-a37d-41cc-901e-bbabbea01184",
-                                                            "$actor[2]$": "dad6a2dc-1cd3-4652-8743-f50bcde86e53",
-                                                            "$actor[3]$": "77caadca-fde5-45e7-87cb-97a79a2c2c52",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "84aac7dd-42d8-4d39-be24-7f2459c54fbc"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "d7cd37d3-8521-48e3-b7e2-7e702b433650"
-                                        }
-                                    ]
-                                },
-                                "id": "192cffd3-9971-4675-bc38-aeea1d4d7292"
-                            },
-                            {
-                                "command": "EVENT_SET_INPUT_SCRIPT",
-                                "args": {
-                                    "input": [
                                         "start"
                                     ],
                                     "override": true,
@@ -272,6 +208,70 @@
                                     ]
                                 },
                                 "id": "84132ca0-ef4f-4a7d-9daa-9b0b021ac9f5"
+                            },
+                            {
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": [
+                                        "b"
+                                    ],
+                                    "override": false,
+                                    "__scriptTabs": "press",
+                                    "__label": "reset with B",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "reset"
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "1",
+                                                            "value": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            },
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "ec6eebc9-5c4d-4678-bf73-95df98d8be60"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "value": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            },
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "00ec9628-8911-4086-a253-d54040196ce1"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                        "args": {
+                                                            "customEventId": "307696a0-891c-405c-b4e1-03957ba20130",
+                                                            "$actor[0]$": "22311ff4-ff62-45a1-9b82-a945d6bd8e93",
+                                                            "$actor[1]$": "f4e04e03-a37d-41cc-901e-bbabbea01184",
+                                                            "$actor[2]$": "dad6a2dc-1cd3-4652-8743-f50bcde86e53",
+                                                            "$actor[3]$": "77caadca-fde5-45e7-87cb-97a79a2c2c52",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "84aac7dd-42d8-4d39-be24-7f2459c54fbc"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "d7cd37d3-8521-48e3-b7e2-7e702b433650"
+                                        }
+                                    ]
+                                },
+                                "id": "192cffd3-9971-4675-bc38-aeea1d4d7292"
                             },
                             {
                                 "command": "EVENT_SET_INPUT_SCRIPT",
@@ -919,7 +919,7 @@
                                                 "operator": "<",
                                                 "comparator": 4,
                                                 "__collapseElse": false,
-                                                "__collapse": true
+                                                "__collapse": false
                                             },
                                             "children": {
                                                 "true": [
@@ -1220,7 +1220,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__label": "left"
                                 },
                                 "children": {
