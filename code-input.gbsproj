@@ -205,7 +205,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__label": "Read Code with Start"
                                 },
                                 "children": {
@@ -214,10 +214,10 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Your code is: $01$"
+                                                    "Your code is: \n$01$"
                                                 ],
                                                 "avatarId": "",
-                                                "__collapse": true
+                                                "__collapse": false
                                             },
                                             "id": "cbcc30b2-a966-416e-b1d0-94f31e0e4cad"
                                         },

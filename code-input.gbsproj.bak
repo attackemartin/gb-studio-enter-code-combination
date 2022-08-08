@@ -281,8 +281,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "up add 7"
+                                    "__collapse": true,
+                                    "__label": "up add 10"
                                 },
                                 "children": {
                                     "true": [
@@ -485,8 +485,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "right 13"
+                                    "__collapse": true,
+                                    "__label": "right 100"
                                 },
                                 "children": {
                                     "true": [
@@ -689,8 +689,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "down 17"
+                                    "__collapse": true,
+                                    "__label": "down 1000"
                                 },
                                 "children": {
                                     "true": [
@@ -893,8 +893,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "left 43"
+                                    "__collapse": true,
+                                    "__label": "left 5000"
                                 },
                                 "children": {
                                     "true": [
