@@ -281,8 +281,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "up add 1x"
+                                    "__collapse": true,
+                                    "__label": "up"
                                 },
                                 "children": {
                                     "true": [
@@ -594,8 +594,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "right add 1x0"
+                                    "__collapse": true,
+                                    "__label": "right"
                                 },
                                 "children": {
                                     "true": [
@@ -907,8 +907,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "down add 1x00"
+                                    "__collapse": true,
+                                    "__label": "down"
                                 },
                                 "children": {
                                     "true": [
@@ -919,7 +919,7 @@
                                                 "operator": "<",
                                                 "comparator": 4,
                                                 "__collapseElse": false,
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
@@ -1220,8 +1220,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "left add 5x00"
+                                    "__collapse": true,
+                                    "__label": "left"
                                 },
                                 "children": {
                                     "true": [
