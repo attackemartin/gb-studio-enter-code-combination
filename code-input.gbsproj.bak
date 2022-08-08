@@ -214,10 +214,10 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Your code is: $01$"
+                                                    "Your code is: \n$01$"
                                                 ],
                                                 "avatarId": "",
-                                                "__collapse": true
+                                                "__collapse": false
                                             },
                                             "id": "cbcc30b2-a966-416e-b1d0-94f31e0e4cad"
                                         },
@@ -281,8 +281,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
-                                    "__label": "up add 10"
+                                    "__collapse": false,
+                                    "__label": "up add 1x"
                                 },
                                 "children": {
                                     "true": [
@@ -306,19 +306,128 @@
                                                         "id": "423c8b36-1bf5-4c66-b4c3-b110d68d1bd0"
                                                     },
                                                     {
-                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "command": "EVENT_IF_VALUE",
                                                         "args": {
-                                                            "vectorX": "1",
-                                                            "operation": "add",
-                                                            "other": "val",
-                                                            "vectorY": "L0",
-                                                            "value": 10,
-                                                            "minValue": "0",
-                                                            "maxValue": "32767",
-                                                            "clamp": false,
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 1,
+                                                            "__collapseElse": true,
+                                                            "__collapse": true
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 10,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "bc7d50b9-9f63-4124-923a-7eb79e901716"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "671f08f6-c295-4778-88d5-8466554e9a37"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 2,
+                                                            "__collapseElse": true,
                                                             "__collapse": false
                                                         },
-                                                        "id": "bc7d50b9-9f63-4124-923a-7eb79e901716"
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 11,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "031bece8-7672-4b17-90e9-f603813ffe68"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "aeeed4dc-7416-43a4-b71d-c23118461d30"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 3,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 12,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "c50f8a91-ee4b-42fd-b7ee-cd29b34d9e71"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "bdf04f95-b421-4fc8-9e22-0d6b92c7ea44"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 4,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 13,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "e8312d1e-60ec-4f9d-b5b6-3a15c46a0617"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "84bd2604-c898-4b9e-b0c8-75f5598dbca2"
                                                     },
                                                     {
                                                         "command": "EVENT_GROUP",
@@ -485,8 +594,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
-                                    "__label": "right 100"
+                                    "__collapse": false,
+                                    "__label": "right add 1x0"
                                 },
                                 "children": {
                                     "true": [
@@ -496,7 +605,7 @@
                                                 "variable": "0",
                                                 "operator": "<",
                                                 "comparator": 4,
-                                                "__collapseElse": true,
+                                                "__collapseElse": false,
                                                 "__collapse": false
                                             },
                                             "children": {
@@ -507,22 +616,131 @@
                                                             "variable": "0",
                                                             "__collapse": true
                                                         },
-                                                        "id": "b266bcdd-371a-4c15-9a81-1a4eb7c3a3f8"
+                                                        "id": "68226e25-c559-41bb-866f-e5d42391c446"
                                                     },
                                                     {
-                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "command": "EVENT_IF_VALUE",
                                                         "args": {
-                                                            "vectorX": "1",
-                                                            "operation": "add",
-                                                            "other": "val",
-                                                            "vectorY": "L0",
-                                                            "value": 100,
-                                                            "minValue": "0",
-                                                            "maxValue": "32767",
-                                                            "clamp": false,
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 1,
+                                                            "__collapseElse": true,
                                                             "__collapse": false
                                                         },
-                                                        "id": "c4b292a9-9840-4920-9e6f-ac6c5918878e"
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 222,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "a44e753b-30e4-4a4a-b6d8-c8afc65a4c80"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "99ebfeb1-85d3-4b97-b8d6-8d8993eefc08"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 2,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 223,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "d4f5f46f-ab99-4110-b481-653996b7478f"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "52e14ca2-fd31-4e75-be41-f2a39a40157f"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 3,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 224,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "b2be321f-9856-4289-bcb8-81a0237c386b"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "535542b5-61e9-4aa3-a82c-95735558c6ad"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 4,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 225,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "47af4af2-614c-4254-8ddc-3c97f53fe918"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "b86cbec9-6ea6-428f-b843-c41448c43f77"
                                                     },
                                                     {
                                                         "command": "EVENT_GROUP",
@@ -539,7 +757,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 1,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -552,19 +770,19 @@
                                                                                         "value": "right"
                                                                                     }
                                                                                 },
-                                                                                "id": "2b053e26-2b9b-4671-8968-1271bff41bc2"
+                                                                                "id": "4dfa08c6-3f8a-4d4a-ad22-836b498cd97e"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "22311ff4-ff62-45a1-9b82-a945d6bd8e93"
                                                                                 },
-                                                                                "id": "496b17fd-f817-4df3-997c-6c086c9d8ef5"
+                                                                                "id": "aa62e013-3ffe-497a-a262-0ac2f439fec7"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "b9e2ac83-e91c-4fcb-85a0-a56d93bb26a0"
+                                                                    "id": "5dad3af2-6038-4d76-861a-6ee0003f3994"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -573,7 +791,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 2,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -586,19 +804,19 @@
                                                                                         "value": "right"
                                                                                     }
                                                                                 },
-                                                                                "id": "f078edac-bf0d-4408-8d2b-6660aa2a7f83"
+                                                                                "id": "3ff1fd1d-7ed4-4cc0-bcbd-b2b973a2c794"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "f4e04e03-a37d-41cc-901e-bbabbea01184"
                                                                                 },
-                                                                                "id": "07115942-0b12-4bed-b91c-fd0992f08816"
+                                                                                "id": "58949b52-7f1b-403d-abc0-03fe0b8e4666"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "18e26215-93fe-4db2-89f2-5cfadcd84dad"
+                                                                    "id": "7c9836f7-0689-4366-ad64-08c7b8279dbd"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -607,7 +825,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 3,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -620,19 +838,19 @@
                                                                                         "value": "right"
                                                                                     }
                                                                                 },
-                                                                                "id": "e696e090-7d0c-4e28-afd1-2d2f775c0fdf"
+                                                                                "id": "63a198ac-d2de-4fe9-92ef-a194c7217685"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "dad6a2dc-1cd3-4652-8743-f50bcde86e53"
                                                                                 },
-                                                                                "id": "aca0fd08-4701-4249-b3b5-13197f41d04e"
+                                                                                "id": "8251149c-ab67-4491-9a8f-cc53a1d7a286"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "27efc7ba-ce19-4ba3-8d19-5fccbaeb5594"
+                                                                    "id": "9457763f-9a91-4f55-b5b7-2cf4351df4e2"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -641,7 +859,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 4,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -654,32 +872,32 @@
                                                                                         "value": "right"
                                                                                     }
                                                                                 },
-                                                                                "id": "a4289f79-2e8e-4f49-ad25-b59f08522eb8"
+                                                                                "id": "85779294-d7cc-451d-91ba-e56cd0b1f939"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "77caadca-fde5-45e7-87cb-97a79a2c2c52"
                                                                                 },
-                                                                                "id": "8904fa0b-6b67-4b6b-8ca0-9216a87aa6c9"
+                                                                                "id": "2a3eb0af-7f14-4010-b960-a8ac95526185"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "5d974e76-7a87-4374-a221-294b5d2b3c18"
+                                                                    "id": "0cba41b2-7538-455a-84db-e3cdfbc920fb"
                                                                 }
                                                             ]
                                                         },
-                                                        "id": "996c7ef5-47e6-4fa2-ad29-fb128e021e14"
+                                                        "id": "4f72930e-4d3b-4b9e-b2e7-37cecd7e779c"
                                                     }
                                                 ],
                                                 "false": []
                                             },
-                                            "id": "c4691cb5-6d62-4b1d-8ce6-89849d764107"
+                                            "id": "5d42020e-c5d2-4c85-b33f-919786c810ed"
                                         }
                                     ]
                                 },
-                                "id": "44e3b5c9-7f3f-4661-94ac-f8c4384eb42d"
+                                "id": "9c29211f-eab5-4022-acc0-7aaf383c91f8"
                             },
                             {
                                 "command": "EVENT_SET_INPUT_SCRIPT",
@@ -689,8 +907,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
-                                    "__label": "down 1000"
+                                    "__collapse": false,
+                                    "__label": "down add 1x00"
                                 },
                                 "children": {
                                     "true": [
@@ -700,7 +918,7 @@
                                                 "variable": "0",
                                                 "operator": "<",
                                                 "comparator": 4,
-                                                "__collapseElse": true,
+                                                "__collapseElse": false,
                                                 "__collapse": false
                                             },
                                             "children": {
@@ -711,22 +929,131 @@
                                                             "variable": "0",
                                                             "__collapse": true
                                                         },
-                                                        "id": "c2ab3982-ee34-4917-921b-9d0e7c3fd4cb"
+                                                        "id": "376bf96b-fb5a-4fd5-867b-a66602a5dc8f"
                                                     },
                                                     {
-                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "command": "EVENT_IF_VALUE",
                                                         "args": {
-                                                            "vectorX": "1",
-                                                            "operation": "add",
-                                                            "other": "val",
-                                                            "vectorY": "L0",
-                                                            "value": 1000,
-                                                            "minValue": "0",
-                                                            "maxValue": "32767",
-                                                            "clamp": false,
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 1,
+                                                            "__collapseElse": true,
                                                             "__collapse": false
                                                         },
-                                                        "id": "733c9d5b-2b7b-496d-92f2-3b0cee75f028"
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 100,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "67549774-13ee-4c43-bb16-cf52fcfeeddf"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "447d25b1-36e8-49c0-a59c-0707c01c43ea"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 2,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 110,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "2f611706-48b6-4d6d-b39b-750ab08737d0"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "cff7eff6-ad01-4df2-be26-907676046fe3"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 3,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 120,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "0c66b8f2-151e-47cc-9f48-94835af2f0fe"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "0b01885a-d964-4610-accf-fd5e66d2e629"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 4,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 130,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "8621926e-5563-4501-9105-27a34af39da6"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "acf8b594-6e42-4f4f-a55c-9c471ffe1805"
                                                     },
                                                     {
                                                         "command": "EVENT_GROUP",
@@ -743,7 +1070,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 1,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -756,19 +1083,19 @@
                                                                                         "value": "down"
                                                                                     }
                                                                                 },
-                                                                                "id": "593a0fb7-ddbb-4f0c-ae69-05f10a1e461c"
+                                                                                "id": "39193ba2-753f-4792-a517-5d5e9299cfae"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "22311ff4-ff62-45a1-9b82-a945d6bd8e93"
                                                                                 },
-                                                                                "id": "1df84305-affe-4b20-98bd-df5992439e2f"
+                                                                                "id": "cc79ab45-dbb1-4529-8405-7119ee92999b"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "4a7817e1-6519-4e49-8720-4d4525ac67f0"
+                                                                    "id": "08344b80-3068-425b-a807-4fee082723da"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -777,7 +1104,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 2,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -790,19 +1117,19 @@
                                                                                         "value": "down"
                                                                                     }
                                                                                 },
-                                                                                "id": "e819ba1b-3eb3-4806-b26b-c632452c8f51"
+                                                                                "id": "204f5ca9-1ff4-4365-b1df-195661e39064"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "f4e04e03-a37d-41cc-901e-bbabbea01184"
                                                                                 },
-                                                                                "id": "edbd347b-d212-44fa-9de5-491edcfd7bb9"
+                                                                                "id": "a1f455dd-f120-457f-8c81-f7c667d9c28c"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "14410671-992c-4b87-87f6-bb5591d9ae11"
+                                                                    "id": "abfad901-093c-4e05-9bc0-c724207763aa"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -811,7 +1138,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 3,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -824,19 +1151,19 @@
                                                                                         "value": "down"
                                                                                     }
                                                                                 },
-                                                                                "id": "b2249126-1e45-4bce-a145-f812be82708e"
+                                                                                "id": "301e8b96-a1ee-4e53-8dcc-71eb8fe4fb17"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "dad6a2dc-1cd3-4652-8743-f50bcde86e53"
                                                                                 },
-                                                                                "id": "fdc48837-bf3c-4244-a8eb-b000e8e9e2db"
+                                                                                "id": "4b9c82df-cf63-4461-b303-38bbf8ee9e61"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "71a6a43c-48c3-4133-863f-37e5054f02e6"
+                                                                    "id": "c9ece285-e176-4a5b-bdef-990d57efdeea"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -858,32 +1185,32 @@
                                                                                         "value": "down"
                                                                                     }
                                                                                 },
-                                                                                "id": "6563f7cf-66ff-4589-b8c6-d239c0abea54"
+                                                                                "id": "e77426ad-e9ea-4f51-8edb-0cc089651ffb"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "77caadca-fde5-45e7-87cb-97a79a2c2c52"
                                                                                 },
-                                                                                "id": "6848fd0f-fafd-40fa-98c5-44c25dd3ceec"
+                                                                                "id": "666c0873-6a83-4aac-8a9a-f51df6c0794a"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "80e72164-362e-41bc-90b9-448701564972"
+                                                                    "id": "86faa623-e5b7-412f-ae94-fd0bd6f93fc8"
                                                                 }
                                                             ]
                                                         },
-                                                        "id": "105ddbd6-01a2-425b-840b-5e994cac7266"
+                                                        "id": "d2bd003e-64ec-46ce-a496-2c8949f8420b"
                                                     }
                                                 ],
                                                 "false": []
                                             },
-                                            "id": "4e2e32d0-8576-4ba7-a722-71dadc61934e"
+                                            "id": "23bdb1ed-320d-4a27-a609-9a5cfaa3b39b"
                                         }
                                     ]
                                 },
-                                "id": "257f8578-ce94-4e79-8d98-200ad7553a57"
+                                "id": "8c2f0ad1-efea-49f5-a38d-ca13ec277436"
                             },
                             {
                                 "command": "EVENT_SET_INPUT_SCRIPT",
@@ -893,8 +1220,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
-                                    "__label": "left 5000"
+                                    "__collapse": false,
+                                    "__label": "left add 5x00"
                                 },
                                 "children": {
                                     "true": [
@@ -904,7 +1231,7 @@
                                                 "variable": "0",
                                                 "operator": "<",
                                                 "comparator": 4,
-                                                "__collapseElse": true,
+                                                "__collapseElse": false,
                                                 "__collapse": false
                                             },
                                             "children": {
@@ -915,22 +1242,131 @@
                                                             "variable": "0",
                                                             "__collapse": true
                                                         },
-                                                        "id": "42845801-d087-4b7a-bb64-03f55b76f298"
+                                                        "id": "fbc1acf4-c830-46eb-97de-dc7df913d09a"
                                                     },
                                                     {
-                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "command": "EVENT_IF_VALUE",
                                                         "args": {
-                                                            "vectorX": "1",
-                                                            "operation": "add",
-                                                            "other": "val",
-                                                            "vectorY": "L0",
-                                                            "value": 5000,
-                                                            "minValue": "0",
-                                                            "maxValue": "32767",
-                                                            "clamp": false,
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 1,
+                                                            "__collapseElse": true,
                                                             "__collapse": false
                                                         },
-                                                        "id": "aef17328-bffc-4ea4-8255-70387493a3d7"
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 1000,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "362a127e-cb6b-48e6-bd47-2d76e690eb44"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "3dcf5b2e-6651-4b2a-a4a8-6212c8597369"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 2,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 1100,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "6c648815-cd71-4317-8255-9fde96b83f24"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "f4cda24a-20a3-4c3b-b9fa-aacf8fc278d8"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 3,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 1200,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "8b832b63-1c3c-4efb-87b7-7eba9a979c46"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "740f0197-d21a-4678-8281-17504be96809"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "0",
+                                                            "operator": "==",
+                                                            "comparator": 4,
+                                                            "__collapseElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "1",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "L0",
+                                                                        "value": 1300,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "32767",
+                                                                        "clamp": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "9bbe1862-691e-4dc6-907b-9d92d047b1d1"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "d87940f7-2120-45f4-95ec-780752ba7616"
                                                     },
                                                     {
                                                         "command": "EVENT_GROUP",
@@ -947,7 +1383,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 1,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -960,19 +1396,19 @@
                                                                                         "value": "left"
                                                                                     }
                                                                                 },
-                                                                                "id": "80783a5a-8b8d-4469-b1b1-bffb337a5464"
+                                                                                "id": "d1780564-fa4c-406b-8c75-b65c9fb0f401"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "22311ff4-ff62-45a1-9b82-a945d6bd8e93"
                                                                                 },
-                                                                                "id": "57b8472a-5160-4504-817f-a3aeb789a760"
+                                                                                "id": "206ef3a0-a5ff-426d-aa43-7abcf7dafd78"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "eafdd1e3-8aa9-4618-a5aa-6402191a5eff"
+                                                                    "id": "099e63ba-8d3e-4970-a295-d470e9d2f7f6"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -981,7 +1417,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 2,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -994,19 +1430,19 @@
                                                                                         "value": "left"
                                                                                     }
                                                                                 },
-                                                                                "id": "26cd382f-7e97-4eda-b2f7-bacab6b8440a"
+                                                                                "id": "c076b141-95e6-4566-9669-6e9a71daacb9"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "f4e04e03-a37d-41cc-901e-bbabbea01184"
                                                                                 },
-                                                                                "id": "63df0dce-f97b-4f8a-b572-6074ac0a76b9"
+                                                                                "id": "299d7a2d-3021-4f62-9bf3-384f3060e76d"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "ac147a24-196b-4b02-a558-1fd33a894f5d"
+                                                                    "id": "a8a32f6f-5d4d-4442-ad47-998efbc74648"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -1015,7 +1451,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 3,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -1028,19 +1464,19 @@
                                                                                         "value": "left"
                                                                                     }
                                                                                 },
-                                                                                "id": "0ad0a7a4-603a-40e0-9bdc-50fa613b91c6"
+                                                                                "id": "12922ad8-a00d-41c8-9adc-7e6e20b0e8f5"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "dad6a2dc-1cd3-4652-8743-f50bcde86e53"
                                                                                 },
-                                                                                "id": "d47f5bd6-6620-4f3b-8701-a740ce32d295"
+                                                                                "id": "6e86077f-e28b-4eed-8f34-1c51a6f53354"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "0a637a55-d960-4877-bebc-b8e9b48a437c"
+                                                                    "id": "ecb6e54e-5c7a-468f-8d13-472030223770"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_IF_VALUE",
@@ -1049,7 +1485,7 @@
                                                                         "operator": "==",
                                                                         "comparator": 4,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -1062,32 +1498,32 @@
                                                                                         "value": "left"
                                                                                     }
                                                                                 },
-                                                                                "id": "ae671f51-2fae-4c48-b792-40e95621e2c4"
+                                                                                "id": "2572f121-f356-435f-9938-07bb3f1857e0"
                                                                             },
                                                                             {
                                                                                 "command": "EVENT_ACTOR_SHOW",
                                                                                 "args": {
                                                                                     "actorId": "77caadca-fde5-45e7-87cb-97a79a2c2c52"
                                                                                 },
-                                                                                "id": "268eb52b-1a3f-426f-bff1-6e169ad69882"
+                                                                                "id": "08d9b82c-6ce6-418a-8645-1cfede1d98b4"
                                                                             }
                                                                         ],
                                                                         "false": []
                                                                     },
-                                                                    "id": "432f5abc-4023-4c48-a2b4-e07109a334c7"
+                                                                    "id": "fb6fca72-a5ff-484d-a12e-d95bc8802863"
                                                                 }
                                                             ]
                                                         },
-                                                        "id": "46071536-15de-45e1-8633-26df2edbf54b"
+                                                        "id": "0481ae9d-3a27-4ba0-96f8-e5673a8d139e"
                                                     }
                                                 ],
                                                 "false": []
                                             },
-                                            "id": "c13eadfc-60e6-4e3e-bfac-5bfe19dde4e6"
+                                            "id": "6cbb1470-bda8-4aff-be80-9f2d06b0b020"
                                         }
                                     ]
                                 },
-                                "id": "725f758f-e045-4095-8229-d72e1d1a9aeb"
+                                "id": "794eb18e-a614-4ed9-b890-bde8ad2676c2"
                             }
                         ]
                     },
@@ -2090,8 +2526,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 75,
-        "worldScrollY": 34,
+        "worldScrollX": 11,
+        "worldScrollY": 105,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -2120,9 +2556,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            205,
-            143,
-            407
+            262,
+            182,
+            531
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
