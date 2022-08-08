@@ -281,8 +281,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "up add 1x"
+                                    "__collapse": true,
+                                    "__label": "up"
                                 },
                                 "children": {
                                     "true": [
@@ -594,8 +594,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "right add 1x0"
+                                    "__collapse": true,
+                                    "__label": "right"
                                 },
                                 "children": {
                                     "true": [
@@ -907,8 +907,8 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
-                                    "__label": "down add 1x00"
+                                    "__collapse": true,
+                                    "__label": "down"
                                 },
                                 "children": {
                                     "true": [
@@ -919,7 +919,7 @@
                                                 "operator": "<",
                                                 "comparator": 4,
                                                 "__collapseElse": false,
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
@@ -1221,7 +1221,7 @@
                                     "override": true,
                                     "__scriptTabs": "press",
                                     "__collapse": false,
-                                    "__label": "left add 5x00"
+                                    "__label": "left"
                                 },
                                 "children": {
                                     "true": [
@@ -1262,7 +1262,7 @@
                                                                         "operation": "add",
                                                                         "other": "val",
                                                                         "vectorY": "L0",
-                                                                        "value": 1000,
+                                                                        "value": 3331,
                                                                         "minValue": "0",
                                                                         "maxValue": "32767",
                                                                         "clamp": false,
@@ -1293,7 +1293,7 @@
                                                                         "operation": "add",
                                                                         "other": "val",
                                                                         "vectorY": "L0",
-                                                                        "value": 1100,
+                                                                        "value": 3332,
                                                                         "minValue": "0",
                                                                         "maxValue": "32767",
                                                                         "clamp": false,
@@ -1324,7 +1324,7 @@
                                                                         "operation": "add",
                                                                         "other": "val",
                                                                         "vectorY": "L0",
-                                                                        "value": 1200,
+                                                                        "value": 3333,
                                                                         "minValue": "0",
                                                                         "maxValue": "32767",
                                                                         "clamp": false,
@@ -1355,7 +1355,7 @@
                                                                         "operation": "add",
                                                                         "other": "val",
                                                                         "vectorY": "L0",
-                                                                        "value": 1300,
+                                                                        "value": 3334,
                                                                         "minValue": "0",
                                                                         "maxValue": "32767",
                                                                         "clamp": false,
