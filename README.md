@@ -20,3 +20,7 @@ You can enter up to 4 combinations, which will give you up to 256 possible end-p
 ### How it works behind the scenes
 Every direction of the D-Pad adds a vertain value to the code variable. 
 I worked with 7, 13, 17, 43 which should give you a unique value in any of those 256 combinations (not confirmed by now. Can any math wizard help here?)
+
+### Follow me for more
+If you want more GB Studio content, you can follow me on Twitter 
+[@attackemartin](https://twitter.com/attackemartin)
