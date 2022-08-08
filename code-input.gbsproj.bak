@@ -205,7 +205,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__label": "Read Code with Start"
                                 },
                                 "children": {
@@ -281,7 +281,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__label": "up add 7"
                                 },
                                 "children": {
@@ -312,11 +312,11 @@
                                                             "operation": "add",
                                                             "other": "val",
                                                             "vectorY": "L0",
-                                                            "value": 7,
+                                                            "value": 10,
                                                             "minValue": "0",
                                                             "maxValue": "32767",
                                                             "clamp": false,
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "id": "bc7d50b9-9f63-4124-923a-7eb79e901716"
                                                     },
@@ -485,7 +485,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__label": "right 13"
                                 },
                                 "children": {
@@ -516,11 +516,11 @@
                                                             "operation": "add",
                                                             "other": "val",
                                                             "vectorY": "L0",
-                                                            "value": 13,
+                                                            "value": 100,
                                                             "minValue": "0",
                                                             "maxValue": "32767",
                                                             "clamp": false,
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "id": "c4b292a9-9840-4920-9e6f-ac6c5918878e"
                                                     },
@@ -689,7 +689,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__label": "down 17"
                                 },
                                 "children": {
@@ -720,11 +720,11 @@
                                                             "operation": "add",
                                                             "other": "val",
                                                             "vectorY": "L0",
-                                                            "value": 17,
+                                                            "value": 1000,
                                                             "minValue": "0",
                                                             "maxValue": "32767",
                                                             "clamp": false,
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "id": "733c9d5b-2b7b-496d-92f2-3b0cee75f028"
                                                     },
@@ -924,11 +924,11 @@
                                                             "operation": "add",
                                                             "other": "val",
                                                             "vectorY": "L0",
-                                                            "value": 43,
+                                                            "value": 5000,
                                                             "minValue": "0",
                                                             "maxValue": "32767",
                                                             "clamp": false,
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "id": "aef17328-bffc-4ea4-8255-70387493a3d7"
                                                     },
@@ -1108,7 +1108,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "code-enter.png"
+            "filename": "code-enter.png",
+            "tileColors": []
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
